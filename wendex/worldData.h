@@ -1,5 +1,5 @@
-#ifndef WENDEX_WORLDDATA_H
-#define WENDEX_WORLDDATA_H
+#ifndef YANDEX_WORLDDATA_H
+#define YANDEX_WORLDDATA_H
 #include <cmath>
 using namespace std;
 
@@ -40,26 +40,35 @@ public:
         return y;
     }
     int Distance(coordinate second){
-       int dis=(int)sqrt(pow((second.getXCoord()-x),2)+pow((second.getYCoord()-y),2));
+        int dis=(int)sqrt(pow((second.getXCoord()-x),2)+pow((second.getYCoord()-y),2));
         return dis;
     }
 };
-
 class order{
 private:
+    int currentTime;
     carType typeOfCar;
     bool completed;
-    int cost;
     payments payMethod;
-    int time;
     coordinate From;
     coordinate To;
+    string driverSurname="noName";
+    string passengerSurname="noName";
 public:
+    order(){
+
+    }
     order(coordinate from,coordinate to,carType car){
-        time=0;
         From=from;
         To=to;
+        typeOfCar=car;
         completed=false;
+    }
+    int getTime(){
+        return (int)(From.Distance(To)/typeOfCar);
+    }
+    int getCost(){
+        return (int)(From.Distance(To)*100/typeOfCar);
     }
     coordinate getToPlace(){
         return To;
@@ -76,9 +85,32 @@ public:
     int getDistance(){
         return To.Distance(From);
     }
+    carType getCarType(){
+        return typeOfCar;
+    }
+    void completeOrder(){
+        completed= true;
+
+    }
+    bool isCompleted(){
+        return completed;
+    }
+    string getPassengerSurname(){
+        return passengerSurname;
+    }
+    string getDriverSurname(){
+        return driverSurname;
+    }
+    void setPassenger(string surname){
+        passengerSurname=surname;
+    }
+    void setDriver(string surname){
+        driverSurname=surname;
+    }
 };
 class Car{
 private:
+    int freeBottleOfWater;
     carType typeOfCar;
     coordinate currentLocation;
     string model;
@@ -108,6 +140,11 @@ public:
     coordinate getLocation(){
         return currentLocation;
     }
+    void parkRightInFrontOfTheEntrance(){
+        if (typeOfCar==Business){
+            cout <<"Idk,what to write her,but this car is business"<<endl;
+        }
+    }
 };
 
-#endif //WENDEX_WORLDDATA_H
+#endif //YANDEX_WORLDDATA_H
