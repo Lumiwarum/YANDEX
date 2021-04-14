@@ -24,6 +24,11 @@ public:
     virtual void addOrderToHistory(order ord){
         orderHistory.push_back(ord);
     }
+    order& getOrder(int i){
+        if ((i>-1)&&(i<orderHistory.size())){
+            return orderHistory[i];
+        }
+    }
     vector<order>& getOrderHistory(){
         return orderHistory;
     }

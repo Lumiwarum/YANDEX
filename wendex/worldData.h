@@ -49,7 +49,7 @@ private:
     int currentTime;
     carType typeOfCar;
     bool completed;
-    payments payMethod;
+    payments payMethod=cash;
     coordinate From;
     coordinate To;
     string driverSurname="noName";

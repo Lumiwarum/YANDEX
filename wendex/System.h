@@ -41,7 +41,7 @@ public:
         logged=false;
     }
     int seePrice(coordinate From,coordinate To,carType type){
-        return (int)(From.Distance(To)*type/100);
+        return (int)(From.Distance(To)*100/type);
     }
     int seeTime(coordinate From,coordinate To,carType type){
         return (int)(From.Distance(To)/type);
@@ -66,7 +66,17 @@ public:
     void ordersFromData(vector<order> addOrders){
         currentOrders=addOrders;
     }
-
+    int searchBySurname(string surname){
+        for (int i=0;i<passengers.size();i++){
+            if(surname==passengers[i].getSurname()){
+                return i;
+            }
+        }
+        return -1;
+    }
+    vector<order> getOrders(){
+        return currentOrders;
+    }
 };
 class DriverGateway{
 private:
@@ -111,8 +121,16 @@ public:
         }
         return -1;
     }
+    int searchBySurname(string surname){
+        for (int i=0;i<drivers.size();i++){
+            if (surname==drivers[i].getSurname()){
+                return i;
+            }
+        }
+        return -1;
+    }
     void logIn(int i){
-        if ((i>0)&&(i<drivers.size())){
+        if ((i>-1)&&(i<drivers.size())){
             currentUser=i;
             logged= true;
         }
