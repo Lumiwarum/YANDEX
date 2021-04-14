@@ -13,9 +13,9 @@ Version of c++20 were used.
 
 To open it in Clion press File, than Open... and find this directory. Choose it and open.
 
-![PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled.png](PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled.png)
+![PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled.png](README/Untitled.png)
 
-![PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled%201.png](PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled%201.png)
+![PSS%20Homework%2095c2dc4615d94f0589621bc9b42895f1/Untitled%201.png](README/Untitled%201.png)
 
 # General ideas of program
 
