@@ -1,3 +1,0 @@
-"C:\Users\chane\AppData\Local\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\wendex.dir/objects.a
-C:\Users\chane\files\min\mingw32\bin\ar.exe cr CMakeFiles\wendex.dir/objects.a @CMakeFiles\wendex.dir\objects1.rsp
-C:\Users\chane\files\min\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\wendex.dir/objects.a -Wl,--no-whole-archive  -o wendex.exe -Wl,--out-implib,libwendex.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\wendex.dir\linklibs.rsp
