@@ -2,7 +2,7 @@
 
 This program is the implementation of Yandex taxi program, where [assengers can request a ride and drivers can accept them.
 
-## A version of the program 1.0
+## A version of the program 1.1
 
 ### how to run
 
@@ -19,17 +19,19 @@ To open it in Clion press File, than Open... and find this directory. Choose it 
 
 # General ideas of program
 
-program mainly consist from 3 classes:
+program mainly consist from 4 classes:
 
 - System: class that saves ans stores data into file called "Data.txt"
-- PassengerGateway class created for passengers to work with program
-- DriverGateway class created for driver to work with program
+- PassengerGateway class created for passengers to work with the program
+- DriverGateway class created for driver to work with the program
+- AdminGateway class created for admins to work with the program
 
 The program also has several files like "persons.h", where it stores classes of passengers and drivers, "WorldData.h" where I did specify special data structures, enums, and other things, that I needed
 
 ## features
 
-program has many features, like getting distance of a ride,time, id of persons, but it would take a lot of time to show all of them, therefore i showed only important ones. However, you can check headers file and see how classes are implemented.
+Passengers can order a ride,change their payment methods, pin adresses, order a ride, see order history. Similary drivers can ask for order history, accept an order, add new car. Admins can block for passengers ability to change peyment method and order a ride, for drivers they can block ability to accept a ride and add new car. Also obly addmins can approve a car before to be able use it for riding.
+Key features added in 1.1 were AdminGateway, blocking functions usage, multiple cars in park of one driver. All of them are showed on the 4th and 5th run of the programm.
 
 ## Running program
 
