@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/chane/CLionProjects/Yandex2/System.h
+persons.h
+C:/Users/chane/CLionProjects/Yandex2/persons.h
+fstream
+-
+
+C:/Users/chane/CLionProjects/Yandex2/main.cpp
+iostream
+-
+System.h
+C:/Users/chane/CLionProjects/Yandex2/System.h
+
+C:/Users/chane/CLionProjects/Yandex2/persons.h
+worldData.h
+C:/Users/chane/CLionProjects/Yandex2/worldData.h
+vector
+-
+
+C:/Users/chane/CLionProjects/Yandex2/worldData.h
+cmath
+-
+

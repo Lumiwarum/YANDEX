@@ -1,0 +1,33 @@
+3
+Andrey Kuzmickiy 5 0 1 1
+1
+0 0 3 4 0 noName 0 40
+0
+Anton kirilin 5 0 1 1
+1
+0 0 14 48 0 noName 1 25
+0
+Lev Kozlov 5 1 1 1
+0
+0
+3
+Sergey Pasynkov 5 0 1 1
+0
+1
+waterTruck 25
+0
+Andrey Vagin 3 0 1 1
+0
+1
+BMW 20
+0
+Artem Voronov 4 1 1 1
+1
+mersedes 10
+2
+Tank 25
+ferrari 25
+1
+0 0 14 48 0 kirilin 0
+1
+Fedor Krasilnikov

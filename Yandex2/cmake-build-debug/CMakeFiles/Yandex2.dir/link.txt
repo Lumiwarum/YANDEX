@@ -1,0 +1,3 @@
+"C:\Users\chane\AppData\Local\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Yandex2.dir/objects.a
+C:\Users\chane\files\min\mingw32\bin\ar.exe cr CMakeFiles\Yandex2.dir/objects.a @CMakeFiles\Yandex2.dir\objects1.rsp
+C:\Users\chane\files\min\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Yandex2.dir/objects.a -Wl,--no-whole-archive  -o Yandex2.exe -Wl,--out-implib,libYandex2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Yandex2.dir\linklibs.rsp
